@@ -1,0 +1,127 @@
+.main{
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(55deg, #528da7, #dbf0cb, #f69d3c);
+} 
+
+
+.flexbox{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+}
+
+.field-holder{
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+
+input{
+ border: 0;
+ border-bottom: solid 0.08rem gray;
+ outline: none;
+ background-color: transparent;
+ height: 1.5rem;
+ width: 10rem;
+}
+
+label {
+  position: absolute;
+  left: 0;
+  top: 4px;
+  cursor: text;
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  height: 1.5rem;
+  transition: 0.4s ease-in-out;
+  pointer-events: none;
+}
+
+/* label.active {
+  color: #cd0700;
+  font-size: 0.8rem;
+  top: -1rem;
+} */
+
+input:focus ~ label,
+input:not(:placeholder-shown) ~ label {
+  color: #364c55;
+  font-size: 0.8rem;
+  top: -1rem;
+  
+}
+
+/* register and login form filed */
+.login-register-container{
+  height: 30rem;
+  width: 20rem;
+  overflow: hidden;
+  border-radius: 1rem;
+  border: solid 0.07rem rgb(172, 169, 169);
+  box-shadow: 0.1rem 0.1rem 1rem black;
+}
+
+/* Login form */
+
+.login-form{
+  margin-top: 2rem;
+  justify-content: space-between;
+  background-color: transparent;
+}
+
+.login-form h1,
+.register-form h1{
+  margin-bottom: 3rem;
+  font-size: 3rem;
+}
+
+.register-form h1{
+  margin-top: -2rem;
+  margin-bottom: 5rem;
+  color: #eee;
+  text-shadow: 0.1rem 0.1rem 0.5rem black;
+}
+
+
+.login-form form,
+.register-form form{
+  margin-bottom: 3rem;
+}
+
+.login-form form{
+  margin-bottom: 2rem;
+}
+
+/* Register form */
+
+.register-form{
+  position: relative;
+  margin-top: 3rem;
+  height: 30rem;
+  border-radius: 1rem ;
+  transition: 1s ease-in-out;
+  background:  radial-gradient(circle at 120%, #333, #333 45%, #eee 75%, #333 78%);
+}
+
+.open-form-div{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 5rem;
+  width: 20rem;
+}
+
+.open-form-div:hover {
+  cursor: pointer;
+}
+
+.register-form-active {
+  margin-top: -21.6rem;
+}
