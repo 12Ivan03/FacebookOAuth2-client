@@ -56,6 +56,7 @@ function App() {
 
           <div className={`register-form flexbox ${openForm ? 'register-form-active' : ''}`}>
 
+              <div className='wave-top'></div>
               <div onClick={handleOpenForm} className='open-form-div'></div>
               <h1>Register</h1>
 

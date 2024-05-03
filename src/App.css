@@ -107,7 +107,20 @@ input:not(:placeholder-shown) ~ label {
   height: 30rem;
   border-radius: 1rem ;
   transition: 1s ease-in-out;
-  background:  radial-gradient(circle at 120%, #333, #333 45%, #eee 75%, #333 78%);
+  
+  z-index: 10;
+}
+
+.wave-top{
+  position: absolute;
+  top: -1rem ;
+  left: -40rem;
+  height: 100rem;
+  width: 100rem;
+  border-radius: 50rem;
+  background-color: #333;
+  z-index: -10;
+  background:  radial-gradient(circle at 155%, #333, #333 64%, #eee 50%, #333 74%);
 }
 
 .open-form-div{
